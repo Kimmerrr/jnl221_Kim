@@ -1,0 +1,54 @@
+<!-- This is the completed HTML page for our final project template. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="final.css">
+	<head class="site_banner">
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Link tag for CSS -->
+
+		<!-- Google font: Poppins -->
+		
+	<div class="header">
+		<h1> Inflation Explained: Director's Commentary </h1>
+			<h4> By Hayden Kim </h4>
+	</div>
+		
+	<body class="text">
+		<section class="video">
+		 <iframe style="border: 3px solid #0000FF;" width="560" height="315" src="https://www.youtube.com/embed/Qf0r7dSHYpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</section>
+		<section>
+			<p> This is a Director's Commentary of the Inflation Explained video by Hayden Kim. This commentary will attempt to explain everything that was cut or simplified for the sake of clarity in the above video. Namely, this commentary will cover the data elements, how they were gathered and what they mean.</p>
+		</section>
+		<section>
+			<h3>Graph 1: Shelter CPI</h3>
+
+			<iframe title="How housing costs have changed year-over-year" aria-label="Interactive line chart" id="datawrapper-chart-UQ6y5" src="https://datawrapper.dwcdn.net/UQ6y5/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="614" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			<p>Methodology: Here, you can interact with the graph and see the specific data points and you can explore the specific changes to . This data was pulled from the <a href="https://www.bls.gov/">BLS website</a>. They have a ton of useful data and a lot of CPI data available. I was able to download the dataset directly as an Excel file from their <a href="https://beta.bls.gov/dataViewer/view/timeseries/CUUR0000SAH1"> website</a>. Then, I turned the raw CPI number into a year-over-year percent by subtracting the CPI in year 1 from CPI in year 2 then dividing by CPI in Year 1. With that, I created this graph to demonstrate the volatility of the dataset and how the BLS's change to the way they calculate BLS can change the overall volatility of total CPI. In essence, I took the inflation rate of housing. I chose this data specifically as opposed to any of the other times the BLS changed their calculations is because housing is a large part of the total CPI and the 1982 change to housing calculation had one of the more profound impacts on the metric. Thus, I found that this 1983 change in the way housing was calculated had an impact on the volatility of the metric.
+			</p> 
+			<p>Notes and cut information: Here is an elaboration on how the BLS changed the calculation for housing. You can read the full explaination given by the BLS <a href="https://www.bls.gov/cpi/factsheets/owners-equivalent-rent-and-rent.htm">here</a>, but this explanation will give you a more in-depth rundown but still understandable explanation of this 1982 change. In the video, I said that "in 1983, the BLS decided to change the way they calculate housing from using home prices to a less volatile rental cost." This is not technically wrong, but is greatly oversimplfied. The biggest question one would ask when they hear this is: what about people who own their homes? The BLS created a metric called <b>Owners’ equivalent rent of residences</b> or <b>OER</b> in addition to <b>rent of primary residence</b> or just <b>rent</b>. The BLS calculates OER by trying to calculate how much the home owner would have had to pay in rent for their property excluding furnishings and utilities. BLS also takes the above mentioned OER and rent and combines it with <b>lodging away from home</b> and <b>tenants' and household insurance</b>. This is called called <b>shelter CPI</b>, which is what the above graph demonstrates. In essence, the shelter CPI aims to capture the total cost of housing and shelter. Each of these variables are weighed differently with rent being weighed the heaviest since the vast majority of Americans rent homes. Another interesting side note is that BLS considers shelter an investment rather than consumption. While this may seem like a technical difference, this means that things like property tax, real estate fees, most maintenence fees, and any costs to improve the property like renovation would not be included in this data these are non-consumption costs outside of the scope for the Consumer Price Index. 
+			</p>
+			
+		</section>
+		<section>
+			<h3>Graph 2: College Tuition Increases</h3>
+			<iframe title="College Tuition Increases Outpaces Inflation" aria-label="Interactive line chart" id="datawrapper-chart-DVK9k" src="https://datawrapper.dwcdn.net/DVK9k/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			<p>Methodology: This data is also from the BLS on a metric called College Tuition and Fees which can be found <a href="https://data.bls.gov/timeseries/CUUR0000SEEB01?output_view=data">here</a>. I then pulled data from the total CPI which can be found <a href="https://beta.bls.gov/dataViewer/view/timeseries/CUUR0000SA0">here</a>. Now with both these datasets, I had to get them into a similar format then plotted them on a line graph. After making the video, I've realized I could also demonstrate the data as percentage change year-over-year in the same way as graph 1: shelter CPI but they both would have told the same thing: that tuition and fees has far outpaced total CPI. One thing you can notice about the graph is the strange step pattern it makes. This is due to the nature of the dataset I pulled. I believe this weird step shape is because both the College Tuition and Fees CPI data and the total CPI data are not seasonally adjusted. Basically, the BLS tends to seasonally adjust their data since costs fluctuate throughout the year due to events like holidays, weather and other patterns. However, for my dataset, I pulled nonseasonally adjusted data. This step pattern is seen most evidently with the college tuition and fees data as the largest increases happened in around August which is when the first semester of tuition is due at a lot of colleges.</p>
+			<p>Notes and cut information: This graph, in context of the video, demonstrates how the CPI is useful despite it's flaws. It makes us question why the cost of tuition increasing so rapidly. In the video, I said that it was a mix of fiscal policy and cultural changes. One could do an entire investigation into all the fiscal policy and economic factors that cause this increase in the cost to go to college but I want to focus on why I chose this wording. The fiscal policy in mind was student debt forgiveness programs. Student debt forgiveness and federal student loans allow more accessibility to colleges but also allowed Universities to increase tuition costs as student debt foregiveness increases demand for college. Additionally, while hard to quantify, the culture around college has changed as more people have enrolled in college over time since it is seen as a gateway to the middle class and a must in some industries. As a result, with increased accessibility to college through student debt forgiveness programs and the belief that college is a must for many people, demand for a college education has justified tuition raises.
+			</p>
+			<p>From this data, I have found that rise in college tuition outpaces total inflation. The rate of increase month-over-month of the college tuition is 77.58% greater than the month-over-month of total CPI.
+			</p>
+		</section>
+		<div class="footer">
+			<p>This page was built in Github Pages by Prof. Nausheen Husain for JNL221 at Syracuse University. Fonts used: Georgia, Poppins.</p>
+		</div>
+	</body>
+</html>
